@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-summary {
+    max-width: 600px;
+}
+
+.product-summary h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: 600;
+    color: #0078d4;
+    margin: 10px 0;
+}
+
+.short-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.buy-now-btn, .add-to-cart-btn {
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buy-now-btn {
+    background-color: #0078d4;
+    color: white;
+}
+
+.buy-now-btn:hover {
+    background-color: #005a9e;
+}
+
+.add-to-cart-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e2e2e2;
+}
+
+/* Download Brochure */
+.download {
+    margin-top: 20px;
+}
+
+.download-btn {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+/* Product Details and Specifications */
+#product-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#product-details h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.highlights {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.highlights li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Specifications Table */
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.specs-table th, .specs-table td {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+    }
+
+    .product-summary {
+        max-width: 90%;
+    }
+}
